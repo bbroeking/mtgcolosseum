@@ -1,0 +1,19 @@
+.search {
+    left: 2000px;
+}
+
+.card {
+    max-width: 300px;
+    right: 200px;
+    display: inline-block;
+}
+
+.search_results {
+    max-width: 1200px;
+}
+
+app-decklist {
+    position: absolute;
+    top: 300px;
+    right: 60px;
+}

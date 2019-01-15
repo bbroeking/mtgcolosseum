@@ -1,0 +1,6 @@
+.card:nth-child(n) {
+    position: relative;
+    z-index: n;
+    margin-top: -180px;
+    margin-right: 120px
+}

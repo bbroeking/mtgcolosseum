@@ -1,0 +1,364 @@
+{
+	"Sets": {
+		"_id": {
+			"type": "Object",
+			"structure": {
+				"_bsontype": {
+					"type": "string",
+					"required": true
+				},
+				"id": {
+					"type": "Uint8Array",
+					"required": true
+				},
+				"toHexString": {
+					"type": "function",
+					"required": true
+				},
+				"get_inc": {
+					"type": "function",
+					"required": true
+				},
+				"getInc": {
+					"type": "function",
+					"required": true
+				},
+				"generate": {
+					"type": "function",
+					"required": true
+				},
+				"toJSON": {
+					"type": "function",
+					"required": true
+				},
+				"equals": {
+					"type": "function",
+					"required": true
+				},
+				"getTimestamp": {
+					"type": "function",
+					"required": true
+				},
+				"generationTime": {
+					"type": "number",
+					"required": true
+				}
+			},
+			"required": true
+		},
+		"object": {
+			"type": "string",
+			"required": true
+		},
+		"id": {
+			"type": "string",
+			"required": true
+		},
+		"oracle_id": {
+			"type": "string",
+			"required": true
+		},
+		"multiverse_ids": {
+			"type": "Array",
+			"required": true
+		},
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"lang": {
+			"type": "string",
+			"required": true
+		},
+		"released_at": {
+			"type": "string",
+			"required": true
+		},
+		"uri": {
+			"type": "string",
+			"required": true
+		},
+		"scryfall_uri": {
+			"type": "string",
+			"required": true
+		},
+		"layout": {
+			"type": "string",
+			"required": true
+		},
+		"highres_image": {
+			"type": "boolean",
+			"required": true
+		},
+		"image_uris": {
+			"type": "Object",
+			"structure": {
+				"small": {
+					"type": "string",
+					"required": true
+				},
+				"normal": {
+					"type": "string",
+					"required": true
+				},
+				"large": {
+					"type": "string",
+					"required": true
+				},
+				"png": {
+					"type": "string",
+					"required": true
+				},
+				"art_crop": {
+					"type": "string",
+					"required": true
+				},
+				"border_crop": {
+					"type": "string",
+					"required": true
+				}
+			},
+			"required": true
+		},
+		"mana_cost": {
+			"type": "string",
+			"required": true
+		},
+		"cmc": {
+			"type": "number",
+			"required": true
+		},
+		"type_line": {
+			"type": "string",
+			"required": true
+		},
+		"oracle_text": {
+			"type": "string",
+			"required": true
+		},
+		"colors": {
+			"type": "Array",
+			"required": true
+		},
+		"color_identity": {
+			"type": "Array",
+			"required": true
+		},
+		"legalities": {
+			"type": "Object",
+			"structure": {
+				"standard": {
+					"type": "string",
+					"required": true
+				},
+				"future": {
+					"type": "string",
+					"required": true
+				},
+				"frontier": {
+					"type": "string",
+					"required": true
+				},
+				"modern": {
+					"type": "string",
+					"required": true
+				},
+				"legacy": {
+					"type": "string",
+					"required": true
+				},
+				"pauper": {
+					"type": "string",
+					"required": true
+				},
+				"vintage": {
+					"type": "string",
+					"required": true
+				},
+				"penny": {
+					"type": "string",
+					"required": true
+				},
+				"commander": {
+					"type": "string",
+					"required": true
+				},
+				"1v1": {
+					"type": "string",
+					"required": true
+				},
+				"duel": {
+					"type": "string",
+					"required": true
+				},
+				"brawl": {
+					"type": "string",
+					"required": true
+				}
+			},
+			"required": true
+		},
+		"games": {
+			"type": "Array",
+			"required": true
+		},
+		"reserved": {
+			"type": "boolean",
+			"required": true
+		},
+		"foil": {
+			"type": "boolean",
+			"required": true
+		},
+		"nonfoil": {
+			"type": "boolean",
+			"required": true
+		},
+		"oversized": {
+			"type": "boolean",
+			"required": true
+		},
+		"promo": {
+			"type": "boolean",
+			"required": true
+		},
+		"reprint": {
+			"type": "boolean",
+			"required": true
+		},
+		"set": {
+			"type": "string",
+			"required": true
+		},
+		"set_name": {
+			"type": "string",
+			"required": true
+		},
+		"set_uri": {
+			"type": "string",
+			"required": true
+		},
+		"set_search_uri": {
+			"type": "string",
+			"required": true
+		},
+		"scryfall_set_uri": {
+			"type": "string",
+			"required": true
+		},
+		"rulings_uri": {
+			"type": "string",
+			"required": true
+		},
+		"prints_search_uri": {
+			"type": "string",
+			"required": true
+		},
+		"collector_number": {
+			"type": "string",
+			"required": true
+		},
+		"digital": {
+			"type": "boolean",
+			"required": true
+		},
+		"rarity": {
+			"type": "string",
+			"required": true
+		},
+		"watermark": {
+			"type": "string",
+			"required": true
+		},
+		"illustration_id": {
+			"type": "string",
+			"required": true
+		},
+		"artist": {
+			"type": "string",
+			"required": true
+		},
+		"border_color": {
+			"type": "string",
+			"required": true
+		},
+		"frame": {
+			"type": "string",
+			"required": true
+		},
+		"frame_effect": {
+			"type": "string",
+			"required": true
+		},
+		"full_art": {
+			"type": "boolean",
+			"required": true
+		},
+		"timeshifted": {
+			"type": "boolean",
+			"required": true
+		},
+		"colorshifted": {
+			"type": "boolean",
+			"required": true
+		},
+		"futureshifted": {
+			"type": "boolean",
+			"required": true
+		},
+		"story_spotlight": {
+			"type": "boolean",
+			"required": true
+		},
+		"related_uris": {
+			"type": "Object",
+			"structure": {
+				"gatherer": {
+					"type": "string",
+					"required": true
+				},
+				"tcgplayer_decks": {
+					"type": "string",
+					"required": true
+				},
+				"edhrec": {
+					"type": "string",
+					"required": true
+				},
+				"mtgtop8": {
+					"type": "string",
+					"required": true
+				}
+			},
+			"required": true
+		},
+		"power": {
+			"type": "string",
+			"required": true
+		},
+		"toughness": {
+			"type": "string",
+			"required": true
+		},
+		"flavor_text": {
+			"type": "string",
+			"required": true
+		},
+		"tcgplayer_id": {
+			"type": "number",
+			"required": true
+		},
+		"card_faces": {
+			"type": "Array",
+			"required": true
+		},
+		"edhrec_rank": {
+			"type": "number",
+			"required": true
+		},
+		"all_parts": {
+			"type": "Array",
+			"required": true
+		}
+	}
+}

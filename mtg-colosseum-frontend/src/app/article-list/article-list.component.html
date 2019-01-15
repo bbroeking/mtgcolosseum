@@ -1,0 +1,20 @@
+<div>
+    <img src="../assets/images/aggro.jpg" style="width: 100%; max-height: 300px; padding: 12px 0px">
+    <div class="alert alert-info" role="alert" *ngFor="let article of articles">
+        <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+            <div class="p-2">
+                <a href="{{ article.fields.url }}"><img src="{{ article.fields.heroImage.fields.file.url }}" class="rounded" width="196" /></a>
+            </div>
+            <div class="p-2">
+                <h5 class="alert-heading"><a href="{{ article.fields.url }}">{{ article.fields.title}}</a></h5>
+                <!-- <p><i>{{ course.fields.author }}</i></p> -->
+                <div [innerHTML]="article.fields.description | mdToHtml"></div>
+                <!-- Add in the support for the quick description of the article -->
+                <!-- THis means that we need to create a field in the content manager and pull and display it here -->
+                <!-- It might just be the first X words of some article -->
+                <!-- <a href="{{ article.fields.url }}" target="_blank" class="btn btn-success">Go To Article</a> -->
+                <button (click)="goToCourseDetailsPage(article.sys.id)" class="btn btn-info">Go to Article</button>
+            </div>
+        </div>
+    </div>
+</div>

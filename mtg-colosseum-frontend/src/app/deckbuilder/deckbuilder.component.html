@@ -1,0 +1,17 @@
+<head>
+    <title>Deck Builder</title>
+</head>
+
+<body>
+    <p-autoComplete class="search" [(ngModel)]="text" (completeMethod)="search($event)"></p-autoComplete>
+    <!-- <button>This is the submit button</button> -->
+    <div class="search_results container">
+        <div class="card" *ngFor="let result of results">
+            <p-card>
+                <img src={{result.image_uris.small}} (click)="addToDecklist(result)">
+            </p-card>
+        </div>
+    </div>
+    <!-- <button (click)="generateDecklist()">Button</button> -->
+    <app-decklist [decklist]="decklist"></app-decklist>
+</body>

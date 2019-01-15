@@ -1,0 +1,9 @@
+<div *ngIf="article">
+    <a href="{{ article.fields.url }}"><img width="40%" style="margin: 10px" class="float-right rounded" src="{{article.fields.heroImage.fields.file.url}}"></a>
+    <h2><a>{{ article.fields.title }}</a></h2>
+    <i>by {{ article.fields.author.fields.name }}</i>
+    <br><br>
+    <div [innerHTML]="article.fields.description"></div>
+    <div [innerHTML]="article.fields.longDescription"></div>
+    <button (click)="goToList()" class="btn btn-danger">Back To List</button>
+</div>
